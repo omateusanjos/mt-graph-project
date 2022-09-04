@@ -13,7 +13,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-animations": "^1.0.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-focus-lock": "^2.9.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

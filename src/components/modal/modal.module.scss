@@ -1,0 +1,88 @@
+
+.wrapper {
+    left: 50%;
+    outline: 0;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: inherit;
+    z-index: 700;
+}
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+.styledModal {
+  z-index: 100;
+  background: white;
+  position: relative;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.header {
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+
+
+.headerText {
+    color: #fff;
+    align-self: center;
+    color: lightgray;
+}
+
+
+.closeButton {
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    background: none;
+    :hover {
+      cursor: pointer;
+    }
+}
+
+.content {
+    padding: 10px;
+    max-height: 30rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.message {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.confirmationButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.yesButton {
+    width: 6rem;
+  background-color: yellow;
+  &:hover {
+    background-color: red;
+  }
+}
+
+.noButton {
+    width: 3rem;
+    background-color: lightgrey;
+    &:hover {
+      background-color: grey;
+    }
+}
