@@ -26,6 +26,11 @@ export default defineConfig({
           type: 'image/png'
         }
       ]
+    },
+    workbox: {
+      cleanupOutdatedCaches: true,
+      skipWaiting: true,
+      clientsClaim: true,
     }
   })]
 })
