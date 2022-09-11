@@ -57,7 +57,7 @@ const Impulse = () => {
       JSON.stringify([...impulseList, payload])
     );
 
-    setCount(count + 1);
+    setCount((previusState) => previusState + 1);
     setImpulseList([...impulseList, payload]);
   };
 
@@ -65,6 +65,7 @@ const Impulse = () => {
     const list = impulseList.filter((item) => item.id !== id);
     localStorage.setItem("impulseList", JSON.stringify(list));
     setImpulseList(list);
+    setCount((previusState) => previusState - 1);
   };
 
   return (

@@ -3,6 +3,7 @@ import { useModal } from "../../hooks/useModal";
 import { ImpulseListProps } from "../../types/impuse";
 import { ConfirmationModal } from "../modal/confirmation";
 import styles from "./Box.module.scss";
+import { ModalProps } from "../../types/modal";
 
 type BoxProps = ImpulseListProps & {
   handleRemove: (id: number) => void;
@@ -31,28 +32,6 @@ const Box = ({
         </div>
       </div>
     </>
-  );
-};
-
-const Modal = () => {
-  const { isShown, toggle } = useModal();
-
-  const onConfirm = () => toggle();
-  const onCancel = () => toggle();
-
-  return (
-    <Modal
-      isShown={isShown}
-      hide={toggle}
-      headerText="Confirmation"
-      modalContent={
-        <ConfirmationModal
-          onConfirm={onConfirm}
-          onCancel={onCancel}
-          message="Are you sure you want to delete element?"
-        />
-      }
-    />
   );
 };
 
