@@ -1,13 +1,5 @@
-import { useCallback, useState } from "react";
-import { useModal } from "../../hooks/useModal";
-import { ImpulseListProps } from "../../types/impuse";
-import { ConfirmationModal } from "../modal/confirmation";
+import { BoxProps } from "../../types/box";
 import styles from "./Box.module.scss";
-import { ModalProps } from "../../types/modal";
-
-type BoxProps = ImpulseListProps & {
-  handleRemove: (id: number) => void;
-};
 
 const Box = ({
   id,

@@ -1,8 +1,5 @@
-import Footer from "../components/footer";
-import Header from "../components/header";
-import Impulse from "../components/Impulse";
+import { Header, Impulse, Footer } from "../components";
 import styles from "../styles/index.module.scss";
-
 const Index = () => {
   return (
     <div className={styles.body}>

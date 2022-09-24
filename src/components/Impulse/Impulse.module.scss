@@ -34,4 +34,29 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5vh;
     max-height: fit-content;
+    inline-size: 80vw;
+    block-size: 80vh;
+    overflow: auto;
+ 
+    &::webkit-scrollbar {
+        width: 0.5vw;
+    }
+    &::webkit-scrollbar-track {
+        background: rgb(0, 0, 0);
+    }
+    &::webkit-scrollbar-thumb {
+        background: rgb(100, 8, 143);
+    }
+    &::webkit-scrollbar-thumb:hover {
+        background: rgb(149, 77, 205);
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    @media screen and (max-width: 480px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
 }

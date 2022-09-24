@@ -1,6 +1,7 @@
-import React from "react";
 import styles from "./Header.module.scss";
 
-export default function Header() {
+const Header = () => {
   return <header className={styles.header}>Impulso DBT </header>;
-}
+};
+
+export default Header;

@@ -1,4 +1,3 @@
-import "./App.scss";
 import Index from "./pages/index";
 
 function App() {
